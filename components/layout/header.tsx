@@ -33,10 +33,10 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
       <div
         className={cn(
-          "mx-auto transition-all duration-500 ease-out",
+          "mx-auto rounded-2xl border transition-all duration-500 ease-out",
           isScrolled
-            ? "mt-4 max-w-4xl bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 rounded-2xl border border-white/20"
-            : "mt-0 max-w-7xl bg-transparent"
+            ? "mt-4 max-w-4xl bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 border-white/20"
+            : "mt-0 max-w-7xl bg-transparent shadow-none border-transparent"
         )}
       >
         <nav
