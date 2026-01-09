@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Container } from "@/components/layout/container";
 import { Logo } from "@/components/shared/logo";
 import { navigation } from "@/data/navigation";
 
@@ -15,7 +14,7 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,20 +30,25 @@ export function Header() {
   };
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      )}
-    >
-      <Container>
-        <nav className="flex items-center justify-between h-16 lg:h-20">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+      <div
+        className={cn(
+          "mx-auto transition-all duration-500 ease-out",
+          isScrolled
+            ? "mt-4 max-w-4xl bg-white/90 backdrop-blur-xl shadow-lg shadow-black/5 rounded-2xl border border-white/20"
+            : "mt-0 max-w-7xl bg-transparent"
+        )}
+      >
+        <nav
+          className={cn(
+            "flex items-center justify-between transition-all duration-500",
+            isScrolled ? "h-14 px-4 lg:px-6" : "h-16 lg:h-20 px-0"
+          )}
+        >
           <Logo />
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navigation.map((item) => (
               <button
                 key={item.label}
@@ -52,7 +56,7 @@ export function Header() {
                 className={cn(
                   "text-sm font-medium transition-colors",
                   isScrolled
-                    ? "text-secondary-700 hover:text-primary-600"
+                    ? "text-secondary-600 hover:text-primary-600"
                     : "text-secondary-800 hover:text-primary-600"
                 )}
               >
@@ -63,7 +67,14 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
-            <Button size="sm" onClick={() => scrollToSection("#getting-started")}>
+            <Button
+              size="sm"
+              onClick={() => scrollToSection("#getting-started")}
+              className={cn(
+                "transition-all duration-300",
+                isScrolled && "scale-95"
+              )}
+            >
               Get Started
             </Button>
           </div>
@@ -81,13 +92,16 @@ export function Header() {
             )}
           </button>
         </nav>
-      </Container>
 
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-secondary-100">
-          <Container>
-            <div className="py-4 space-y-4">
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div
+            className={cn(
+              "lg:hidden border-t border-secondary-100",
+              isScrolled ? "bg-white/90 rounded-b-2xl" : "bg-white"
+            )}
+          >
+            <div className="py-4 px-4 space-y-4">
               {navigation.map((item) => (
                 <button
                   key={item.label}
@@ -106,9 +120,9 @@ export function Header() {
                 </Button>
               </div>
             </div>
-          </Container>
-        </div>
-      )}
+          </div>
+        )}
+      </div>
     </header>
   );
 }
