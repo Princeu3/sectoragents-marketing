@@ -23,7 +23,7 @@ export function Logo({ className, dark = false }: LogoProps) {
         </div>
       </div>
       <span>
-        Sector<span className="text-primary-600">Agents</span>
+        Sector<span className="text-primary-600">Agent</span>
         <span className="text-primary-400">.ai</span>
       </span>
     </Link>
