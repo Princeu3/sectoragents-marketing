@@ -37,7 +37,7 @@ export function TestimonialsSection() {
       <Container>
         <SectionHeading
           title="Trusted by Industry Leaders"
-          subtitle="See what operations teams are saying about SectorAgents."
+          subtitle="See what operations teams are saying about SectorAgent."
         />
 
         <div

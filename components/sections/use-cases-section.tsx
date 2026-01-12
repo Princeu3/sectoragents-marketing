@@ -22,7 +22,7 @@ export function UseCasesSection() {
       <Container>
         <SectionHeading
           title="Use Cases That Deliver"
-          subtitle="Pre-built workflows designed by industry experts. See exactly how SectorAgents automates your critical processes."
+          subtitle="Pre-built workflows designed by industry experts. See exactly how SectorAgent automates your critical processes."
         />
 
         {/* Industry Toggle */}

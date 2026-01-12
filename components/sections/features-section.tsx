@@ -32,7 +32,7 @@ export function FeaturesSection() {
     <SectionWrapper id="features">
       <Container>
         <SectionHeading
-          title="How SectorAgents Works"
+          title="How SectorAgent Works"
           subtitle="Intelligent automation that understands your business processes and adapts to your needs."
         />
 

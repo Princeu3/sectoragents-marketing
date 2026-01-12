@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sectoragents.ai"),
+  metadataBase: new URL("https://sectoragent.ai"),
   title: {
-    default: "SectorAgents.ai | Enterprise AI Automation for Manufacturing & Retail",
-    template: "%s | SectorAgents.ai",
+    default: "SectorAgent.ai | Enterprise AI Automation for Manufacturing & Retail",
+    template: "%s | SectorAgent.ai",
   },
   description:
     "Enterprise AI that automates what matters. Intelligent workflows for manufacturing and retail operations. Reduce manual work by 40-60%, save $150K-500K annually.",
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
     "order-to-cash automation",
     "inventory management AI",
   ],
-  authors: [{ name: "SectorAgents.ai" }],
-  creator: "SectorAgents.ai",
-  publisher: "SectorAgents.ai",
+  authors: [{ name: "SectorAgent.ai" }],
+  creator: "SectorAgent.ai",
+  publisher: "SectorAgent.ai",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sectoragents.ai",
-    siteName: "SectorAgents.ai",
-    title: "SectorAgents.ai | Enterprise AI Automation",
+    url: "https://sectoragent.ai",
+    siteName: "SectorAgent.ai",
+    title: "SectorAgent.ai | Enterprise AI Automation",
     description:
       "Enterprise AI that automates what matters. Intelligent workflows for manufacturing and retail operations.",
     images: [
@@ -50,13 +50,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SectorAgents.ai - Enterprise AI Automation",
+        alt: "SectorAgent.ai - Enterprise AI Automation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SectorAgents.ai | Enterprise AI Automation",
+    title: "SectorAgent.ai | Enterprise AI Automation",
     description:
       "Enterprise AI that automates what matters. Intelligent workflows for manufacturing and retail operations.",
     images: ["/og-image.png"],

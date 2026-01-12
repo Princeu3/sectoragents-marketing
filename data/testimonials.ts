@@ -4,7 +4,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "1",
     quote:
-      "SectorAgents freed our team from hours of manual data entry. Our order processing time dropped by 45% in the first month. The AI decisions are transparent and our team trusts the system.",
+      "SectorAgent freed our team from hours of manual data entry. Our order processing time dropped by 45% in the first month. The AI decisions are transparent and our team trusts the system.",
     author: "Sarah Chen",
     title: "Operations Manager",
     company: "Precision Manufacturing Co.",
@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "5",
     quote:
-      "What impressed me most was the integration with our legacy SAP system. I expected months of custom development, but SectorAgents connected in weeks.",
+      "What impressed me most was the integration with our legacy SAP system. I expected months of custom development, but SectorAgent connected in weeks.",
     author: "Robert Martinez",
     title: "Procurement Manager",
     company: "Industrial Solutions Ltd.",

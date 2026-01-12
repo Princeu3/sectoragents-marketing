@@ -61,7 +61,7 @@ export function ROICalculatorSection() {
       <Container size="md">
         <SectionHeading
           title="Calculate Your ROI"
-          subtitle="See how much time and money you could save with SectorAgents automation."
+          subtitle="See how much time and money you could save with SectorAgent automation."
         />
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">

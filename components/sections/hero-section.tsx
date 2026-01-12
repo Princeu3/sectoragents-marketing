@@ -96,7 +96,7 @@ export function HeroSection() {
               className="group"
             >
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              See SectorAgents in Action
+              See SectorAgent in Action
             </Button>
             <Button
               size="lg"

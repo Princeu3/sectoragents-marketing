@@ -38,7 +38,7 @@ export function PainPointsSection() {
       <Container>
         <SectionHeading
           title="Your Challenges, Solved"
-          subtitle="We understand the operational pain points that slow your business down. Here's how SectorAgents transforms them into competitive advantages."
+          subtitle="We understand the operational pain points that slow your business down. Here's how SectorAgent transforms them into competitive advantages."
         />
 
         {/* Industry Toggle */}
